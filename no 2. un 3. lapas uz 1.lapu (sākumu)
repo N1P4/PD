@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma 3 - Laboratorijas piezīmes</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; }
+        label { display: block; margin-bottom: 10px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 20px; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Forma 3 - Laboratorijas piezīmes</h1>
+        <form>
+            <label for="lab-notes">Laboratorijas piezīmes:</label>
+            <textarea id="lab-notes" name="lab-notes" rows="4"></textarea>
+
+            <button type="submit" onclick="location.href='index.html'; return false;">Uz 1. Formu (Sākums)</button>
+        </form>
+    </div>
+
+</body>
+</html>
