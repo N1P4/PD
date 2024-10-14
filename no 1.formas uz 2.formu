@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma 1 - Ķīmijas Laboratorijas Uzskaite</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; }
+        label { display: block; margin-bottom: 10px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 20px; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Forma 1 - Pārbaudes dati</h1>
+        <form>
+            <label for="sample-id">Parauga ID:</label>
+            <input type="text" id="sample-id" name="sample-id" required>
+
+            <label for="test-type">Testa veids:</label>
+            <select id="test-type" name="test-type">
+                <option value="ph">pH analīze</option>
+                <option value="conductivity">Vadošspēja</option>
+                <option value="other">Cits</option>
+            </select>
+
+            <label for="notes">Piezīmes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <button type="submit" onclick="location.href='forma2.html'; return false;">Uz 2. Formu</button>
+            <button type="submit" onclick="location.href='forma3.html'; return false;">Uz 3. Formu</button>
+        </form>
+    </div>
+
+</body>
+</html>
